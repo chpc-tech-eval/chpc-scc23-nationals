@@ -26,36 +26,23 @@ Good Luck!
 # Cheat Sheet
 -------------- 
 
-| ---                | ---                                                                                                                                                  |   |
 | ssh                | used from logging into the remote machine and for executing commands on the remote machine.                                                          |   |
+| ---                | ---                                                                                                                                                  |   |
 | scp                | scp copies files between hosts on a network.  It uses ssh for data transfer, and uses the same authentication and provides the same security as ssh. |   |
-| ---                | ---                                                                                                                                                  |   |
 | wget / curl        | free utility for non-interactive download of files from the Web.  It supports HTTP, HTTPS, and FTP protocols.                                        |   |
-| ---                | ---                                                                                                                                                  |   |
 | top / htop         | provides a dynamic real-time view of a running system. It can display system summary information as well as a list of processes or threads.          |   |
-| ---                | ---                                                                                                                                                  |   |
 | screen / tmux      | a full-screen window manager that multiplexes a physical terminal between several processes (typically interactive  shells).                         |   |
-| ---                | ---                                                                                                                                                  |   |
 | ip a               | display IP Addresses and property information                                                                                                        |   |
-| ---                | ---                                                                                                                                                  |   |
 | dmesg              | prints the message buffer of the kernel. The output of this command typically contains the messages produced by the device drivers                   |   |
-| ---                | ---                                                                                                                                                  |   |
 | watch              | execute a program periodically, showing output fullscreen.                                                                                           |   |
-| ---                | ---                                                                                                                                                  |   |
 | df -h              | report file system disk space usage.                                                                                                                 |   |
-| ---                | ---                                                                                                                                                  |   |
 | ping               | the ping command is used to verify that a device can communicate with another on a network.                                                          |   |
-| ---                | ---                                                                                                                                                  |   |
 | lynx               | Command-line based web browser (more useful than you think)                                                                                          |   |
-| ---                | ---                                                                                                                                                  |   |
 | ctrl+alt+[F1...F6] | Open another shell session (multiple ‘desktops’)                                                                                                     |   |
-| ---                | ---                                                                                                                                                  |   |
 | ctrl+z             | Move command to background (useful with ‘bg’)                                                                                                        |   |
-| ---                | ---                                                                                                                                                  |   |
 | du -h              | summarize disk usage of each FILE, recursively for directories.                                                                                      |   |
-| ---                | ---                                                                                                                                                  |   |
 |                    |                                                                                                                                                      |   |
- 
+
 
  
 
