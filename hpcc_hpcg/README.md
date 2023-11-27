@@ -1,7 +1,7 @@
 HPC Challenge
 =============
 
-Your team will need to compile and run the **HPCC** benchmark suite. This code includes several micro-benchmarks which test various performance aspects of the cluster. The suite includes **HPL**, **DGEMM** and **FFT** which test floating point performance. **STREAM** and **RandomAccess** are included to access memory performance. **PTRANS** and *'Communication bandwidth and latency'* are used to assess network performance. Further information and instructions about the benchmark can be found here (HPC Challenge Benchmark)[https://hpcchallenge.org/hpcc/index.html]
+Your team will need to compile and run the **HPCC** benchmark suite. This code includes several micro-benchmarks which test various performance aspects of the cluster. The suite includes **HPL**, **DGEMM** and **FFT** which test floating point performance. **STREAM** and **RandomAccess** are included to access memory performance. **PTRANS** and *'Communication bandwidth and latency'* are used to assess network performance. Further information and instructions about the benchmark can be found here [HPC Challenge Benchmark](https://hpcchallenge.org/hpcc/index.html)
 
 ## Getting the source code
 ----------------------------
@@ -13,7 +13,7 @@ $ wget https://hpcchallenge.org/projectsfiles/hpcc/download/hpcc-1.5.0.tar.gz
 
 Alternatively the source can be obtained from Github:
 ```bash
-git clone https://github.com/icl-utk-edu/hpcc
+$ git clone https://github.com/icl-utk-edu/hpcc
 ```
 
 If you can produce a higher individual **HPL** score outside of **HPCC** (through use of alternate software or hardware), you may include this result to supplement your HPCC submission for judging.
@@ -21,7 +21,7 @@ If you can produce a higher individual **HPL** score outside of **HPCC** (throug
 ## Tuning HPL.dat file
 ------------------------
 
-For guidance, use online resources, such as (HPL Calculator)[https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/] to determine the theoretical **FLOPS** performance of your hardware (**Peak**), and from that a realistic achievable score (**Rmax**).
+For guidance, use online resources, such as [HPL Calculator](https://www.advancedclustering.com/act_kb/tune-hpl-dat-file/) to determine the theoretical **FLOPS** performance of your hardware (**Peak**), and from that a realistic achievable score (**Rmax**).
 
 ## Compiling, Building and Running the Benchmark
 --------------------------------------------------
@@ -59,7 +59,7 @@ For each of your respective build(s) and run(s), you must submit your:
 High Performance Conjugate Gradients
 ====================================
 
-**HPCG** is intended as a complement to the **High Performance LINPACK (HPL)*** benchmark. It is designed to exercise computational and data access patterns that more closely match a different and broad set of important applications. See (HPCG Benchmark)[https://hpcg-benchmark.org/] for more information.
+**HPCG** is intended as a complement to the **High Performance LINPACK (HPL)*** benchmark. It is designed to exercise computational and data access patterns that more closely match a different and broad set of important applications. See [HPCG Benchmark](https://hpcg-benchmark.org/) for more information.
 
 There is little setup and configuration required for this benchmark, so limited guidance is provided. A reference version of **HPCG** is available for download, which you can compile and run:
 ```bash
