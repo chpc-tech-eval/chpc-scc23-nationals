@@ -26,22 +26,33 @@ Good Luck!
 # Cheat Sheet
 -------------- 
 
-| ssh                | used from logging into the remote machine and for executing commands on the remote machine.                                                         |
-| ---                | ---                                                                                                                                                 |
-| scp                | scp copies files between hosts on a network. It uses ssh for data transfer, and uses the same authentication and provides the same security as ssh. |
-| wget / curl        | free utility for non-interactive download of files from the Web.It supports HTTP, HTTPS, and FTP protocols.                                         |
-| top / htop         | provides a dynamic real-time view of a running system. It can display system summary information as well as a list of processes or threads.         |
-| screen / tmux      | a full-screen window manager that multiplexes a physical terminal between several processes (typically interactive shells).                         |
-| ip a               | display IP Addresses and property information                                                                                                       |
-| dmesg              | prints the message buffer of the kernel. The output of this command typically contains the messages produced by the device drivers                  |
-| watch              | execute a program periodically, showing output fullscreen.                                                                                          |
-| df -h              | report file system disk space usage.                                                                                                                |
-| ping               | the ping command is used to verify that a device can communicate with another on a network.                                                         |
-| lynx               | Command-line based web browser (more useful than you think)                                                                                         |
-| ctrl+alt+[F1...F6] | Open another shell session (multiple ‘desktops’)                                                                                                    |
-| ctrl+z             | Move command to background (useful with ‘bg’)                                                                                                       |
-| du -h              | summarize disk usage of each FILE, recursively for directories.                                                                                     |
-|                    |                                                                                                                                                     |
+Below is a table with a number of Linux system commands and utilities that you *may* find useful in assisting you to debug problems that you may encounter with your clusters. Note that some of these utilities do not ship with the base deployment of a number of Linux flavors, and you may be required to install the associated packages, prior to making use of them.
+
+| Command            | Description                                                                                                                                                                                                        |
+| ---                | ---                                                                                                                                                                                                                |
+| ssh                | Used from logging into the remote machine and for executing commands on the remote machine.                                                                                                                        |
+| scp                | SCP copies files between hosts on a network. It uses ssh for data transfer, and uses the same authentication and provides the same security as ssh.                                                                |
+| wget / curl        | Utility for non-interactive download of files from the Web.It supports HTTP, HTTPS, and FTP protocols.                                                                                                             |
+| top / htop / btop  | Provides a dynamic real-time view of a running system. It can display system summary information as well as a list of processes or threads.                                                                        |
+| screen / tmux      | Full-screen window manager that multiplexes a physical terminal between several processes (typically interactive shells).                                                                                          |
+| ip a               | Display IP Addresses and property information                                                                                                                                                                      |
+| dmesg              | Prints the message buffer of the kernel. The output of this command typically contains the messages produced by the device drivers                                                                                 |
+| watch              | Execute a program periodically, showing output fullscreen.                                                                                                                                                         |
+| df -h              | Report file system disk space usage.                                                                                                                                                                               |
+| ping               | PING command is used to verify that a device can communicate with another on a network.                                                                                                                            |
+| lynx               | Command-line based web browser (more useful than you think)                                                                                                                                                        |
+| ctrl+alt+[F1...F6] | Open another shell session (multiple ‘desktops’)                                                                                                                                                                   |
+| ctrl+z             | Move command to background (useful with ‘bg’)                                                                                                                                                                      |
+| du -h              | Summarize disk usage of each FILE, recursively for directories.                                                                                                                                                    |
+| lscpu              | Command line utility that provides system CPU related information.                                                                                                                                                 |
+| lstotp             | View the topology of a Linux system.                                                                                                                                                                               |
+| inxi               | Lists information related to your systems' sensors, partitions, drives, networking, audio, graphics, CPU, system, etc...                                                                                           |
+| hwinfo             | Hardware probing utility that provides detailed info about various components.                                                                                                                                     |
+| lshw               | Hardware probing utility that provides detailed info about various components.                                                                                                                                     |
+| proc               | Information and control center of the kernel, providing a communications channel between kernel space and user space. Many of the preceding commands query information provided by proc, i.e. `cat /proc/cpuinfo`. |
+| uname              | Useful for determining information about your current flavor and distribution of your operating system and its version.                                                                                            |
+| lsblk              | Provides information about block devices (disks, hard drives, flash drives, etc) connected to your system and their partitioning schemes.                                                                          |
+|                    |                                                                                                                                                                                                                    |
 
 
 
