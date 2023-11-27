@@ -1,4 +1,4 @@
-HPC Challenge
+HPC Challenge *[12.5%]*
 =============
 
 Your team will need to compile and run the **HPCC** benchmark suite. This code includes several micro-benchmarks which test various performance aspects of the cluster. The suite includes **HPL**, **DGEMM** and **FFT** which test floating point performance. **STREAM** and **RandomAccess** are included to access memory performance. **PTRANS** and *'Communication bandwidth and latency'* are used to assess network performance. Further information and instructions about the benchmark can be found here [HPC Challenge Benchmark](https://hpcchallenge.org/hpcc/index.html)
@@ -54,7 +54,7 @@ For each of your respective build(s) and run(s), you must submit your:
 
 You are permitted to submit the best High Performance Linpack (**HPL**) score that you are able to achieve, independently of the rest of **HPCC**.
 
-High Performance Conjugate Gradients
+High Performance Conjugate Gradients *[7.5%]*
 ====================================
 
 **HPCG** is intended as a complement to the **High Performance LINPACK (HPL)*** benchmark. It is designed to exercise computational and data access patterns that more closely match a different and broad set of important applications. See [HPCG Benchmark](https://hpcg-benchmark.org/) for more information.
