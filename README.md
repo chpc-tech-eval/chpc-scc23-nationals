@@ -23,6 +23,26 @@ Rulings and decisions from the competition organizers are final.
 
 Good Luck! 
 
+# Timetable
+-------------
+
+# Scoring
+----------
+
+| Application          | Weight | Breakdown                                                                                          |
++======================+========+====================================================================================================+
+| HPCC & HPCG          | 20% | <ul><li>HPCC (7.5%)<ul><li>High Performance Linpack (HPL)</li><\ul></li> <li>HPCG (7.5%)</li></ul> |
+| OpenFOAM             | 10% |                                                                                                    |
+| AmberMD              | 10% |                                                                                                    |
+| WRF                  | 10% |                                                                                                    |
+| SwiftSIM             | 10% |                                                                                                    |
+| MILC                 | 10% |                                                                                                    |
+| *Secret Application* | 10% |                                                                                                    |
+| Presentation         | 20% |                                                                                                    |
+
+# Instructions for Mentors
+---------------------------
+
 # Cheat Sheet
 -------------- 
 
