@@ -27,7 +27,7 @@ The general prescription that can be used to build **HPL**, is as follows:
 - Copy an HPL template `Makefile` from `hpl/setup` to `hpl` and make appropriate changes to `MPI` and `BLAS` sections, 
 - Compile HPCC
   ```bash
-  $ make <i>target</i>
+  $ make <target>
   ```
 - Edit the `hpccinf.txt` file and configure the *HPL parameters (N, NB, P and Q)* for your cluster.
 - Run the benchmark using MPI:

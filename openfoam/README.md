@@ -127,13 +127,13 @@ Plot a graph of the number of **cores (subdomains)** versus the reported wall ti
 
 In order to determine the most efficient configuration of **MPI rank** and **pThreads**, you will need to conduct an investigation. You will do so by populating a table similar to the one shown below: 
 
-| Total MPI Ranks | Ranks Per Node | Threads/Rank | RAM Usage Per Node | Run Time |   |   |
-|             --- |            --- |          --- | ---                | ---      |   |   |
-|               6 |              2 |            8 | ???                | ???      |   |   |
-|              12 |              4 |            4 | ???                | ???      |   |   |
-|              24 |              8 |            2 | ???                | ???      |   |   |
-|          etc... |            ... |          ... | ...                | ...      |   |   |
-|                 |                |              |                    |          |   |   |
+| Total MPI Ranks | Ranks Per Node | Threads/Rank | RAM Usage Per Node | Run Time |
+|             --- |            --- |          --- | ---                | ---      |
+|               6 |              2 |            8 | ???                | ???      |
+|              12 |              4 |            4 | ???                | ???      |
+|              24 |              8 |            2 | ???                | ???      |
+|          etc... |            ... |          ... | ...                | ...      |
+|                 |                |              |                    |          |
 
 You are required to submit your (1) graph and (2) all output files for your SMP runs, as well as your (3) table and (4) SLURM batch*(if you used a scheduler)* and (5) output files of your most efficient run, for judging.
 
