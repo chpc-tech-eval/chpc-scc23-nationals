@@ -29,16 +29,16 @@ Good Luck!
 # Scoring
 ----------
 
-| Application          | Weight | Breakdown                                                                                                                           |
-| ---                  |    --- | ---                                                                                                                                 |
-| HPCC & HPCG          |    20% | <ul><li>HPCC *[7.5%]*<ul><li>High Performance Linpack (HPL) *[5%]*</li></ul><li>HPCG *[7.5%]*</li></ul>                             |
+| Application          | Weight | Breakdown                                                                                                                                  |
+| ---                  |    --- | ---                                                                                                                                        |
+| HPCC & HPCG          |    20% | <ul><li>HPCC *[7.5%]*<ul><li>High Performance Linpack (HPL) *[5%]*</li></ul><li>HPCG *[7.5%]*</li></ul>                                    |
 | OpenFOAM             |    10% | <ul><li>Parallel Efficiency Investigation *[4%]*<ul><li>ParaView Visualization *[2%]*</li></ul><li>Simple Benchmark Large *[4%]*</li></ul> |
-| AmberMD              |    10% |                                                                                                                                     |
-| WRF                  |    10% |                                                                                                                                     |
-| SwiftSIM             |    10% |                                                                                                                                     |
-| MILC                 |    10% |                                                                                                                                     |
-| *Secret Application* |    10% |                                                                                                                                     |
-| Presentation         |    20% |                                                                                                                                     |
+| AmberMD              |    10% |                                                                                                                                            |
+| WRF                  |    10% | <ul><li> *[4%]*<ul><li> Visualization *[2%]*</li></ul><li> *[4%]*</li></ul>                                                                |
+| SwiftSIM             |    10% | <ul><li> *[4%]*<ul><li> Visualization *[2%]*</li></ul><li> *[4%]*</li></ul>                                                                |
+| MILC                 |    10% |                                                                                                                                            |
+| *Secret Application* |    10% |                                                                                                                                            |
+| Presentation         |    20% |                                                                                                                                            |
 
 # Instructions for Mentors
 ---------------------------

@@ -72,7 +72,7 @@ cp -r "$FOAM_TUTORIALS"/incompressible/simpleFoam/pitzDaily ./
 
 ```
 
-# Benchmark: Simple Small (Serial)
+# Benchmark 1: Simple Small (Serial)
 
 Copy the benchmark from your competition USB flash drive *(Tip: Use a separate sub-folder for each case)*:
 ```bash
@@ -110,13 +110,13 @@ $ cp -r 0.orig 0
 $ simpleFoam | tee singleCore.out 
 ```
 
-# Benchmark: Parallel Efficiency Investigation *[4%]*
+# Benchmark 1: Parallel Efficiency Investigation *[4%]*
 
 Parallel computing can be carried out in two ways:
 - One is done on a single computer with multiple internal processors, known as a ***Shared Memory Multiprocessor**.
 - The other way is achieved through a series of computers interconnected by a network, known as a **Distributed Memory Multicomputer**.
 
-OpenFOAM uses **MPI** and **POSIX threads (pthreads)** to implement a hybrid parallelism scheme. This allows message passing between **NUMA** domains, with each domain containing multiple worker threads and utilizing shared memory. 
+OpenFOAM uses **MPI** and **POSIX threads (pthreads)** to implement a hybrid parallelism scheme. This allows message passing between **NUMA** domains, with each domain containing multiple worker threads and utilizing shared memory. In an analogous way to the optimization experiment from the **SWIFT** benchmark, where you optimized for the most efficient communication pattern between **MPI** processes, with each containing multiple **POSIX** (**pThreads**) utilizing shared memory.
 
 Repeat the previous benchmark, with increasing numbers of subdomains, i.e set to 2, 6, 12, 24, etc...  This time you will execute the test case with `mpi`:
 ```bash
@@ -137,15 +137,32 @@ In order to determine the most efficient configuration of **MPI rank** and **pTh
 
 You are required to submit your (1) graph and (2) all output files for your SMP runs, as well as your (3) table and (4) SLURM batch*(if you used a scheduler)* and (5) output files of your most efficient run, for judging.
 
-# Visualization *[2%]*
+# Benchmark 1: Visualization *[2%]*
 
-Make use of `ParaView` to visualize the benchmark.
+Make use of [ParaView](https://github.com/anikfal/PostWRF) to visualize the benchmark.
 
-# Benchmark: Simple Large *[4%]*
+# Benchmark 2: Simple Large *[4%]*
 
+Copy the benchmark from the competition folder on your USB flash drive:
+```bash
+$ cp <path to USB>/OpenFOAM/SimpleBenchMarkLarge.tar.gz ~/<path to benchmarka>
+```
+Make the appropriate changes to the decomposition file and edit `system/decomposeParDict`.
 
+## Running the benchmark
 
+Then run the domain decomposition:
+```bash
+$ decomposePar > decmpose.out
+```
+Lastly, execute the benchmark:
+```bash
+$ mpirun <MPI PARAMETERS> simpleFoam -paralel | tee submission.out
+```
 
+## Submission
+
+You are required to submit your, your compilation log files, SLURM batch output file *(if you used a scheduler)*, your image rendering of the **"Simple Small"** benchmark and your simulation output files of your most *efficient* run, for judging.
 
 
 
