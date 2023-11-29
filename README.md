@@ -33,9 +33,9 @@ Good Luck!
 | ---                  |    --- | ---                                                                                                                                        |
 | HPCC & HPCG          |    20% | <ul><li>HPCC *[7.5%]*<ul><li>High Performance Linpack (HPL) *[5%]*</li></ul><li>HPCG *[7.5%]*</li></ul>                                    |
 | OpenFOAM             |    10% | <ul><li>Parallel Efficiency Investigation *[4%]*<ul><li>ParaView Visualization *[2%]*</li></ul><li>Simple Benchmark Large *[4%]*</li></ul> |
-| AmberMD              |    10% |                                                                                                                                            |
-| WRF                  |    10% | <ul><li> *[4%]*<ul><li> Visualization *[2%]*</li></ul><li> *[4%]*</li></ul>                                                                |
-| SwiftSIM             |    10% | <ul><li> *[4%]*<ul><li> Visualization *[2%]*</li></ul><li> *[4%]*</li></ul>                                                                |
+| AmberMD              |    10% | <ul><li> *[4%]*<ul><li> Visualization *[2%]*</li></ul><li> *[4%]*</li></ul>                                                                |
+| WRF                  |    10% | <ul><li>Single Domain Case *[4%]*<ul><li> NCL Visualization *[2%]*</li></ul><li>Nested Two-Domain Case *[4%]*</li></ul>                    |
+| SwiftSIM             |    10% | <ul><li>Isolated Galaxy Potential *[4%]*<ul><li> PySPHViewer *[2%]*</li></ul><li>Eagle 25 *[4%]*</li></ul>                                 |
 | MILC                 |    10% |                                                                                                                                            |
 | *Secret Application* |    10% |                                                                                                                                            |
 | Presentation         |    20% |                                                                                                                                            |
