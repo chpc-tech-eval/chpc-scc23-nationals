@@ -24,7 +24,7 @@ Good Luck!
 
 # Timetable
 
-<img width="30px" src="./CHPC23_SCC_Conference_Timetable.png" alt="CHPC23 SCC National COnference" />
+<img width="800px" src="./CHPC23_SCC_Conference_Timetable.png" alt="CHPC23 SCC National COnference" />
 
 # Scoring
 
