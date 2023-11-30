@@ -3,7 +3,6 @@ CHPC 2023 Student Cluster Competition
 Benchmarking and Competition instructions for the Center for High Performance Computing (CHPC) 2023 Student Cluster Compettion (SCC). Which is hosted by the National Integrated Cyber Infrastructure Systems (NICIS), a division of the South African Council for Scientific and Industrial Research (CSIR). For 2023 the competition will be held in person at the Kruger Gate Hotel in Mpumalanga, South Africa.
 
 # Getting Started
-------------------
 
 The benchmarks were chosen to be compatible with the software environment that you previously setup in the first round of this competition. For this round, you are allowed to install any legally obtained software you wish to run the problems. However, using obscure, nonstandard software may limit the support you receive from the competition organizers. 
 
@@ -24,10 +23,10 @@ Rulings and decisions from the competition organizers are final.
 Good Luck! 
 
 # Timetable
--------------
+
+<img width="30px" src="./CHPC23_SCC_Conference_Timetable.png" alt="CHPC23 SCC National COnference" />
 
 # Scoring
-----------
 
 | Application          | Weight | Breakdown                                                                                                                                  |
 | ---                  |    --- | ---                                                                                                                                        |
@@ -37,14 +36,12 @@ Good Luck!
 | WRF                  |    10% | <ul><li>Single Domain Case *[4%]*<ul><li> NCL Visualization *[2%]*</li></ul><li>Nested Two-Domain Case *[4%]*</li></ul>                    |
 | SwiftSIM             |    10% | <ul><li>Isolated Galaxy Potential *[4%]*<ul><li> PySPHViewer *[2%]*</li></ul><li>Eagle 25 *[4%]*</li></ul>                                 |
 | MILC                 |    10% |                                                                                                                                            |
-| *Secret Application* |    10% |                                                                                                                                            |
+| Qiskit-Aer           |    10% |                                                                                                                                            |
 | Presentation         |    20% |                                                                                                                                            |
 
 # Instructions for Mentors
----------------------------
 
 # Cheat Sheet
--------------- 
 
 Below is a table with a number of Linux system commands and utilities that you *may* find useful in assisting you to debug problems that you may encounter with your clusters. Note that some of these utilities do not ship with the base deployment of a number of Linux flavors, and you may be required to install the associated packages, prior to making use of them.
 
