@@ -37,7 +37,7 @@ Good Luck!
 | SwiftSIM      |    10% | <ul><li>Isolated Galaxy Potential *[4%]*<ul><li> PySPHViewer *[2%]*</li></ul><li>Eagle 25 *[4%]*</li></ul>                                 |
 | MILC          |    10% | NERSC MILC Medium *[10%]*                                                                                                                  |
 | Qiskit-Aer    |    10% | <ul><li>Quantum Volume Experiment *[4%]*<ul><li> Graphs: QV Simulation Time vs Number of Qubits *[2%]*</li></ul><li>Multinode MPI Run *[4%]*</li></ul>                                 |
-| Presentation  |    20% |                                                                                                                                            |
+| Presentation  |    20% | <ul><li>Judges' Scores *[10%]*<li>Cluster Configurations *[5%]*<li>Fan Favorite *[5%]*</li></UL>                                           |
 
 # Instructions for Mentors
 
