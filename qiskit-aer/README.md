@@ -47,7 +47,7 @@ $ git clone https://github.com/Qiskit/qiskit-aer
 
 Depending on your system, you may need to additionally add `PyBind11`, this can be added to the `requirements-dev.txt` file.
 
-# Benchmark: Quantum Volume Experiment (Single Node)
+# Benchmark: Quantum Volume Experiment (Single Node) *[4%]*
 
 *Quantum Volume (QV)** is a single-number metric that can be measured using a concrete protocol on near-term quantum computers of modest size. The QV method quantifies the largest random circuit of equal width and depth that the computer successfully implements. Quantum computing systems with high-fidelity operations, high connectivity, large calibrated gate sets, and circuit rewriting toolchains are expected to have higher quantum volumes. Simply put, Quantum Volume is a single number meant to encapsulate the performance of today’s quantum computers, like a classical computer’s transistor count.
 
@@ -94,8 +94,11 @@ for i in num_qubits:
   print(i, result_array[i])
 
 ```
+## Submission
 
-## Graph: Number of Qubits vs Simulation time to Solution *[2%]*
+Repeat the experiment with `20` and then `30` qubits. Submit you build script, you compilation output,
+
+# Graph: Number of Qubits vs Simulation time to Solution *[2%]*
 
 Plot a graph of your quantum volume experiment, with the following changes to your `qv_experiment.py`:
 ```python
@@ -107,11 +110,7 @@ plt.title('Quantum Volume Experiment with depth=' + str(qv_depth))
 plt.savefig('qv_experiment.png')
 ```
 
-## Submission *[4%]*
-
-Repeat the experiment with `20` and then `30` qubits. Submit you build script, you compilation output,
-
-# Benchmark: Quantum Volume Experiment (Multiple Nodes) *[4%]***
+# Benchmark: Quantum Volume Experiment (Multiple Nodes) *[4%]*
 
 In order to run the benchmark across your cluster, you will need to configure **Qiskit-Aer** with **MPI** support. Parallelizing the simulation can extend the available memory allowing you to run the experiment with a larger number of quibits. Recompile your binary with *MPI* support:
 ```bash
