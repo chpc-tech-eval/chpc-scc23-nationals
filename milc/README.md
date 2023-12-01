@@ -57,7 +57,7 @@ After modifying all of the appropriate `make` files, build the executable binary
 $ make su3_rhmd_hisq 2>&1 | tee make_logfile.log
 ```
 
-### Remember to Clean Build Your Executable
+### Remember to Clean Build
 
 Should you need to correct any compilation or build errors, **remember to clean build** and remove any previously built object files, before attempting to recompile:
 
@@ -66,7 +66,7 @@ $ make clean
 rm ../libraries/*o*
 ```
 
-# Benchmark: NERSC MILC
+# Benchmark: NERSC MILC *[10%]* 
 
 You Will be using the **medium** benchmark, `36x36x36x72.chklat` for the competition.
 

@@ -24,20 +24,20 @@ Good Luck!
 
 # Timetable
 
-<img width="800px" src="./CHPC23_SCC_Conference_Timetable.png" alt="CHPC23 SCC National COnference" />
+<img width="800px" src="./CHPC23_SCC_Conference_Timetable.png" alt="CHPC23 SCC National Conference" />
 
 # Scoring
 
-| Application          | Weight | Breakdown                                                                                                                                  |
-| ---                  |    --- | ---                                                                                                                                        |
-| HPCC & HPCG          |    20% | <ul><li>HPCC *[7.5%]*<ul><li>High Performance Linpack (HPL) *[5%]*</li></ul><li>HPCG *[7.5%]*</li></ul>                                    |
-| OpenFOAM             |    10% | <ul><li>Parallel Efficiency Investigation *[4%]*<ul><li>ParaView Visualization *[2%]*</li></ul><li>Simple Benchmark Large *[4%]*</li></ul> |
-| AmberMD              |    10% | <ul><li> *[4%]*<ul><li> Visualization *[2%]*</li></ul><li> *[4%]*</li></ul>                                                                |
-| WRF                  |    10% | <ul><li>Single Domain Case *[4%]*<ul><li> NCL Visualization *[2%]*</li></ul><li>Nested Two-Domain Case *[4%]*</li></ul>                    |
-| SwiftSIM             |    10% | <ul><li>Isolated Galaxy Potential *[4%]*<ul><li> PySPHViewer *[2%]*</li></ul><li>Eagle 25 *[4%]*</li></ul>                                 |
-| MILC                 |    10% |                                                                                                                                            |
-| Qiskit-Aer           |    10% |                                                                                                                                            |
-| Presentation         |    20% |                                                                                                                                            |
+| Application   | Weight | Breakdown                                                                                                                                  |
+| ---           |    --- | ---                                                                                                                                        |
+| HPCC & HPCG   |    20% | <ul><li>HPCC *[7.5%]*<ul><li>High Performance Linpack (HPL) *[5%]*</li></ul><li>HPCG *[7.5%]*</li></ul>                                    |
+| OpenFOAM      |    10% | <ul><li>Parallel Efficiency Investigation *[4%]*<ul><li>ParaView Visualization *[2%]*</li></ul><li>Simple Benchmark Large *[4%]*</li></ul> |
+| AmberMD       |    10% | <ul><li> *[4%]*<ul><li> Visualization *[2%]*</li></ul><li> *[4%]*</li></ul>                                                                |
+| WRF           |    10% | <ul><li>Single Domain Case *[4%]*<ul><li> NCL Visualization *[2%]*</li></ul><li>Nested Two-Domain Case *[4%]*</li></ul>                    |
+| SwiftSIM      |    10% | <ul><li>Isolated Galaxy Potential *[4%]*<ul><li> PySPHViewer *[2%]*</li></ul><li>Eagle 25 *[4%]*</li></ul>                                 |
+| MILC          |    10% | NERSC MILC Medium *[10%]*                                                                                                                  |
+| Qiskit-Aer    |    10% | <ul><li>Quantum Volume Experiment *[4%]*<ul><li> Graphs: QV Simulation Time vs Number of Qubits *[2%]*</li></ul><li>Multinode MPI Run *[4%]*</li></ul>                                 |
+| Presentation  |    20% |                                                                                                                                            |
 
 # Instructions for Mentors
 
