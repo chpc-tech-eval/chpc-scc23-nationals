@@ -15,12 +15,12 @@ You may use a package manager such as `python pip` or `conda`. However *bonus* p
 
 ### Create and Activate a New Virtual Environment
 
-Separate your python projects and ensure that they exist in their own, clean enviromnets:
+Separate your python projects and ensure that they exist in their own, clean environments:
 
 ```bash
 $ python3 -m venv QiskitAer
-  source QiskitDevenv/bin/activate
-  ```
+$ source QiskitAer/bin/activate
+```
 ### Install a Rust Compiler
 
 You're going to need a [Rust Compiler](https://forge.rust-lang.org/infra/other-installation-methods.html) installed on your system, in order to compile Qiskit:
@@ -94,6 +94,12 @@ for i in num_qubits:
   print(i, result_array[i])
 
 ```
+
+Run the benchmark by executing the script you've just written:
+```bash
+$ python qv_experiment.py
+```
+
 ## Submission
 
 Repeat the experiment with `20` and then `30` qubits. Submit you build script, you compilation output,
@@ -112,9 +118,30 @@ plt.savefig('qv_experiment.png')
 
 # Benchmark: Quantum Volume Experiment (Multiple Nodes) *[4%]*
 
-In order to run the benchmark across your cluster, you will need to configure **Qiskit-Aer** with **MPI** support. Parallelizing the simulation can extend the available memory allowing you to run the experiment with a larger number of quibits. Recompile your binary with *MPI* support:
+In order to run the benchmark across your cluster, you will need to configure **Qiskit-Aer** with **MPI** support. It would be a good idea to configure a clean virtual environment:Separate your python projects and ensure that they exist in their own, clean environments:
+
 ```bash
-$ $ python ./setup.py bdist_wheel -- -DAER_MPI=True
+$ deactivate
+$ python -m venv QiskitAerMPI
+$ source QiskitAerMPI/bin/activate
+``````
+
+Parallelizing the simulation can extend the available memory allowing you to run the experiment with a larger number of quibits. Recompile your binary with *MPI* support.
+
+```bash
+$ python ./setup.py bdist_wheel -- -DAER_MPI=True
 ```
 
-Repeat the experiment and determine the maximum number of qubits that you can simulate on your cluster.
+Repeat the experiment and determine the maximum number of qubits that you can simulate on your cluster. Take care and keep in mind that `OpenMP` threads will also affect you simulation, and can be passed as an environment variable. To run the simulation using multiple nodes on your cluster, the following configurations should be set to backend options. *(If there is not enough memory to simulate the input circuit, Qiskit Aer automatically set following options, but it is recommended to explicitly set them)*, by modifying your ```python def quant_vol()``` function:
+```python
+def quant_vol():
+...
+result = sim.run(circuit, shots=1, seed_simulator=12345, blocking_enable=True, blocking_qubits=<?>).result()
+```
+
+Run you script across your cluster:
+
+```bash
+$ mpirun -np <N> python qv_experiment_mpi.py
+```
+
