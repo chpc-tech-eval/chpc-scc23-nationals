@@ -2,6 +2,8 @@ CHPC 2023 Student Cluster Competition
 ========================================
 Benchmarking and Competition instructions for the Center for High Performance Computing (CHPC) 2023 Student Cluster Compettion (SCC). Which is hosted by the National Integrated Cyber Infrastructure Systems (NICIS), a division of the South African Council for Scientific and Industrial Research (CSIR). For 2023 the competition will be held in person at the Kruger Gate Hotel in Mpumalanga, South Africa.
 
+{:toc}
+
 # Getting Started
 
 The benchmarks were chosen to be compatible with the software environment that you previously setup in the first round of this competition. For this round, you are allowed to install any legally obtained software you wish to run the problems. However, using obscure, nonstandard software may limit the support you receive from the competition organizers.
@@ -32,7 +34,7 @@ Good Luck!
 | ---           |    --- | ---                                                                                                                                        |
 | HPCC & HPCG   |    20% | <ul><li>HPCC *[7.5%]*<ul><li>High Performance Linpack (HPL) *[5%]*</li></ul><li>HPCG *[7.5%]*</li></ul>                                    |
 | OpenFOAM      |    10% | <ul><li>Parallel Efficiency Investigation *[4%]*<ul><li>ParaView Visualization *[2%]*</li></ul><li>Simple Benchmark Large *[4%]*</li></ul> |
-| AmberMD       |    10% | <ul><li> *[4%]*<ul><li> Visualization *[2%]*</li></ul><li> *[4%]*</li></ul>                                                                |
+| AmberMD       |    10% | *(Benchmark details to be given out on Tuesday)*                                                               |
 | WRF           |    10% | <ul><li>Single Domain Case *[4%]*<ul><li> NCL Visualization *[2%]*</li></ul><li>Nested Two-Domain Case *[4%]*</li></ul>                    |
 | SwiftSIM      |    10% | <ul><li>Isolated Galaxy Potential *[4%]*<ul><li> PySPHViewer *[2%]*</li></ul><li>Eagle 25 *[4%]*</li></ul>                                 |
 | MILC          |    10% | NERSC MILC Medium *[10%]*                                                                                                                  |

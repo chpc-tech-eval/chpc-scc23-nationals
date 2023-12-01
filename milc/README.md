@@ -66,7 +66,7 @@ $ make clean
 rm ../libraries/*o*
 ```
 
-# Benchmark: NERSC MILC *[10%]* 
+# Benchmark: NERSC MILC *[10%]*
 
 You Will be using the **medium** benchmark, `36x36x36x72.chklat` for the competition.
 
