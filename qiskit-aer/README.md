@@ -7,7 +7,7 @@ Qiskit Aer is high-performance quantum computing simulators with realistic noise
 
 Follow the [Getting Started Guide](https://qiskit.org/ecosystem/aer/getting_started.html) from the official IBM Qiskit-Aer documentation.
 
-You may use a package manager such as `python pip' or `conda`. However *bonus* points will be awarded for building Qiskit-Aer from source.
+You may use a package manager such as `python pip` or `conda`. However *bonus* points will be awarded for building Qiskit-Aer from source.
 
 ## Installing Qiskit-Aer from Source
 
