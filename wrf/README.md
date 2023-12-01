@@ -1,7 +1,7 @@
 WRF
 ======
 
-The **W**eather **R***esearch and **F***orecasting model is a state-of-the-art mesoscale **N***umerical **W***eather **P**rediction **(NWP)** system designed for both atmospheric research and operational forecasting applications. It features two dynamical cores, a data assimilation system, and a software architecture supporting parallel computation and system extensibility. The model serves a wide range of meteorological applications across scales from tens of meters to thousands of kilometers. 
+The **W**eather **R***esearch and **F***orecasting model is a state-of-the-art mesoscale **N***umerical **W***eather **P**rediction **(NWP)** system designed for both atmospheric research and operational forecasting applications. It features two dynamical cores, a data assimilation system, and a software architecture supporting parallel computation and system extensibility. The model serves a wide range of meteorological applications across scales from tens of meters to thousands of kilometers.
 
 ## Obtaining the source codes
 
@@ -14,27 +14,27 @@ Configuration, building and installation instructions can be found at [Online Tu
 ### System Requirements
 
 * Your choice of **C and Fortran Compilers** and implementation of **MPI**.
-..* *Bonus points* will be awarded for compiling with both GCC / (OpenMPI) and Intel Compilers. 
+..* *Bonus points* will be awarded for compiling with both GCC / (OpenMPI) and Intel Compilers.
 * **HDF5** library required for **NetCDF4** compression support.
 * **NetCDF** library is used for large network file I/O with gridded model data.
-..* Optionally you can make use of Parallel **HDF5** and **NetCDF** libraries, which will process network file I/O in parallel, as opposed to serially 
-* If these are not already installed on your system, you may additionally require **Jasper, LibPNG** and **Zlib**. 
+..* Optionally you can make use of Parallel **HDF5** and **NetCDF** libraries, which will process network file I/O in parallel, as opposed to serially.
+* If these are not already installed on your system, you may additionally require **Jasper, LibPNG** and **Zlib**.
 
 ### Compiling for Basic Nesting
 
-Take care to ensure that you are working within a consistent environment. Failure to manage your environment, libraries and dependencies properly will impede your team from being able to successfully build and compile the application. You can compile for **`basic nesting`**. 
+Take care to ensure that you are working within a consistent environment. Failure to manage your environment, libraries and dependencies properly will impede your team from being able to successfully build and compile the application. You can compile for **`basic nesting`**.
 
-During the compilation process you will be presented with a choice of options to select for a column (type of compiler and architecture) and a row (type of parallel build): 
+During the compilation process you will be presented with a choice of options to select for a column (type of compiler and architecture) and a row (type of parallel build):
 
-* The first column is for **serial** (single processor) builds. 
-* The second column is **OpenMP** (threaded, shared-memory), builds with up to 40 maximum processes. 
-* The third and fourth columns are for (**MPI** only) and (**OpenMP + MPI**) 
+* The first column is for **serial** (single processor) builds.
+* The second column is **OpenMP** (threaded, shared-memory), builds with up to 40 maximum processes.
+* The third and fourth columns are for (**MPI** only) and (**OpenMP + MPI**)
 
-In an analogous way to the optimization experiment from the **SWIFT** benchmark, where you optimized for the most efficient communication pattern between **MPI** processes, with each containing multiple **POSIX** (**pThreads**) utilizing shared memory. In this experiment however, you will be required to find an optimal mix of **MPI** process and **OpenMP threads**, (or your configuration may perform best without OpenMP threads). 
+In an analogous way to the optimization experiment from the **SWIFT** benchmark, where you optimized for the most efficient communication pattern between **MPI** processes, with each containing multiple **POSIX** (**pThreads**) utilizing shared memory. In this experiment however, you will be required to find an optimal mix of **MPI** process and **OpenMP threads**, (or your configuration may perform best without OpenMP threads).
 
 ### Compilation
 
-Clean build the executable on multiple processors, and for debugging purposes you can usefully redirect and store `standard_out` and `standard_err` to a log file. 
+Clean build the executable on multiple processors, and for debugging purposes you can usefully redirect and store `standard_out` and `standard_err` to a log file.
 
 ```bash
 $ ./compile - j N em_real >& build_wrf.log
@@ -45,7 +45,7 @@ $ ./configure
 Once **WRF** has finished building, you must compile and configure **WPS**, and from within this subdirectory, you may need to create the following symbolic link:
 
 ```bash
-$ ln –sf ungrib/Variable_Tables/Vtable.GFS Vtable 
+$ ln –sf ungrib/Variable_Tables/Vtable.GFS Vtable
 ```
 
 # Benchmark 1: Single Domain Case *[2%]*
@@ -66,7 +66,7 @@ $ ln –sf PATH/TO/met_em.d01*
 $ ./real.exe >& real.log
 ```
 
-This will generate the boundary condition file for the (outer) domain `wrfbdy_d01`, and the initial conditions for the domain `wrfinput_d01`, (there will be an additional input file in the case for nested domains). There will be a `wrf.exe` binary and a symbolic link to them under the `main/` and `run/` folders, respectively. 
+This will generate the boundary condition file for the (outer) domain `wrfbdy_d01`, and the initial conditions for the domain `wrfinput_d01`, (there will be an additional input file in the case for nested domains). There will be a `wrf.exe` binary and a symbolic link to them under the `main/` and `run/` folders, respectively.
 
 You must determine the optimum ratio of `OpenMP Threads` to `MPI Ranks`, and in this regard useful environment variables to manipulate include `OMP_STACKSIZE` and `OMP_NUM_THREADS`. Configure an appropriate **SLURM** batch script and reroute the output to an appropriately named logfile:
 

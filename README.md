@@ -4,23 +4,23 @@ Benchmarking and Competition instructions for the Center for High Performance Co
 
 # Getting Started
 
-The benchmarks were chosen to be compatible with the software environment that you previously setup in the first round of this competition. For this round, you are allowed to install any legally obtained software you wish to run the problems. However, using obscure, nonstandard software may limit the support you receive from the competition organizers. 
+The benchmarks were chosen to be compatible with the software environment that you previously setup in the first round of this competition. For this round, you are allowed to install any legally obtained software you wish to run the problems. However, using obscure, nonstandard software may limit the support you receive from the competition organizers.
 
-You are strongly encouraged to make use of any resource available to you. However, be advised that the competition organizers will provide limited technical support and assistance in building and running your applications. 
+You are strongly encouraged to make use of any resource available to you. However, be advised that the competition organizers will provide limited technical support and assistance in building and running your applications.
 
-Team mentors are encouraged to support and motivate their teams. However, they may not do any of the work for the students. They are strictly there to provide guidance and suggestions, and are there to participate in the conference for their own benefit as well. 
+Team mentors are encouraged to support and motivate their teams. However, they may not do any of the work for the students. They are strictly there to provide guidance and suggestions, and are there to participate in the conference for their own benefit as well.
 
-Team captains will each be issued a competition USB flash drive. This is how the teams will be issued with their benchmarks and how teams will submit their results. Only the Team captain can approach the organizers’ booth, to submit and/or receive benchmarks. Only one Team captain is allowed at the organizer's booth at any time. 
+Team captains will each be issued a competition USB flash drive. This is how the teams will be issued with their benchmarks and how teams will submit their results. Only the Team captain can approach the organizers’ booth, to submit and/or receive benchmarks. Only one Team captain is allowed at the organizer's booth at any time.
 
-To receive the next set of benchmarks, you will need to make a valid submission of the previous benchmark. Alternatively, you may forfeit penalty points should you be unable to submit a preceding result but want to attempt the next benchmark. The benchmarks will get progressively harder. 
+To receive the next set of benchmarks, you will need to make a valid submission of the previous benchmark. Alternatively, you may forfeit penalty points should you be unable to submit a preceding result but want to attempt the next benchmark. The benchmarks will get progressively harder.
 
 The competition organizers will give teams a general indication of where they should be, in the morning at the beginning of the day, and again in the afternoon at the end of the day.
 
 The competition will end on **Thursday, 7<sup>th</sup> of December at 10:00am**.
 
-Rulings and decisions from the competition organizers are final. 
+Rulings and decisions from the competition organizers are final.
 
-Good Luck! 
+Good Luck!
 
 # Timetable
 
@@ -40,6 +40,22 @@ Good Luck!
 | Presentation         |    20% |                                                                                                                                            |
 
 # Instructions for Mentors
+
+The role of Mentors and Volunteers is to provide leadership and guidance for the student competitors participating in this year's Center for Higher Performance Computing 2023 Student Cluster Competition.
+
+In preparing your teams for the competition, you main goal is to ensure that you teach and impart knowledge to the student participants in such a way that they are empowered and enable to tackle the problems and benchmarking tasks themselves.
+
+## Hands-Off Rule *(You may not touch the keyboard)*
+
+Under no circumstances whatsoever may mentors touch any competition hardware belonging to either their team, or the competition hardware of another team. Mentors are encouraged to provide guidance and leadership to their *(as well as other)* teams.
+
+Any mentors found to be directly in contravention of this rule, may result in their team incurring a penalty. Repeated infringements may result in possible disqualification of their team.
+
+## Main Conference Participation
+
+In addition to supporting their teams, mentors are also **strongly** encouraged to participate in the Main Conference. Shuttles will be available between the Skukuza Safari Lodge *(Main Conference Venue)* and the Kruger Gate Hotel *(Student Cluster Competition Venue)*.
+
+There are a number of interesting talks, panels, workshops, tutorials and tracks [scheduled](https://events.chpc.ac.za/event/125/timetable/#all.detailed) for this year's conference. Coordinate and plan with your teams accordingly, so that you may make the best use of your time here by providing support, as well as enjoying and learning from the conference.
 
 # Cheat Sheet
 
@@ -70,8 +86,3 @@ Below is a table with a number of Linux system commands and utilities that you *
 | uname              | Useful for determining information about your current flavor and distribution of your operating system and its version.                                                                                            |
 | lsblk              | Provides information about block devices (disks, hard drives, flash drives, etc) connected to your system and their partitioning schemes.                                                                          |
 |                    |                                                                                                                                                                                                                    |
-
-
-
-
-
