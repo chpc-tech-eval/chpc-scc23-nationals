@@ -1,7 +1,9 @@
 Qiskit-Aer
 ===========
 
-Qiskit Aer is high-performance quantum computing simulators with realistic noise models. It provides interfaces to run quantum circuits with or without noise using multiple different simulation methods. Qiskit Aer supports leveraging MPI and running on GPUs to improve the performance of simulation.
+*Qiskit* is an open-source *Software Development Kit (SDK)* for working with quantum computers at the level of circuits, pulses, and algorithms. It provides tools for creating and manipulating quantum programs and running them on prototype quantum devices on IBM Quantum Platform or on simulators on a local computer.
+
+*Qiskit-Aer* is an extension to the Qiskit SDK for using high performance computing resources to simulate quantum computers and programs. It provides interfaces to run quantum circuits with or without noise using a number of various simulation methods. *Qiskit-Aer* supports leveraging *MPI* to improve the performance of simulation.
 
 # Installation Instructions
 
@@ -76,20 +78,27 @@ def quant_vol(qubits=15, depth=10):
 To run the QV experiment, you'll need to parameterize the following variables, in order to generate the QV circuits and run them on a backend and on an ideal simulator:
 * `qubits`: number or list of physical qubits to be simulated for the experiment,
 * `depth`: meaning the number of discrete time steps during which the circuit can run gates before the qubits decohere.
+* `shots`: used for sampling statistics, number of repetitions of each circuit.
 
 Append the following to your `qv_experiment.py` script:
 
 ```python
 # number of qubits, for your system see how much higher that 30 your can go...
 num_qubits = np.arrange(10, 30)
+
 # QV Depth
 qv_depth = 10
+
+# For bonus points submit results with up to 20 or even 30 shots
+# Note that this will be more demanding on your system
+num_shots = 10
+
 # Array for storing the output results
 result_array = [[], []]
 
 # iterate over qv depth and number of qubits
 for i in num_qubits:
-  result_array[i] = quant_vol(qubits=i, depth=qv_depth)
+  result_array[i] = quant_vol(qubits=i, shots=num_shots, depth=qv_depth)
   # for debugging purposes you can optionally print the output
   print(i, result_array[i])
 
@@ -118,7 +127,7 @@ plt.savefig('qv_experiment.png')
 
 # Benchmark: Quantum Volume Experiment (Multiple Nodes) *[4%]*
 
-In order to run the benchmark across your cluster, you will need to configure **Qiskit-Aer** with **MPI** support. It would be a good idea to configure a clean virtual environment:Separate your python projects and ensure that they exist in their own, clean environments:
+In order to run the benchmark across your cluster, you will need to configure **Qiskit-Aer** with **MPI** support. It would be a good idea to configure a clean virtual environment. Separate your python projects and ensure that they exist in their own, clean environments:
 
 ```bash
 $ deactivate
