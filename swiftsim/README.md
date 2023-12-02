@@ -1,4 +1,4 @@
-SWIFTSIM
+SwiftSIM
 =========
 
 **SWIFT** is an acronym for **S**mooth **P***article **H***ydrodynamics With **F**ine-grained **I***nter-dependent **T**asking. It is a gravity and **SPH** solver designed to run cosmological simulations, scaling well across up to peta-scale machines.
@@ -16,11 +16,11 @@ Configuration, building and installation instructions can be found in the `INSTA
 
 ### Requirements and Dependencies
 
-* Your choice of *Compiler* and *MPI*,
-* *HDF5* library (optionally optimize large I/O and file processing),
-* *GSL (GNU Scientific Library) , required for cosmological time integration*,
-* *FFTW*
-* *METIS* or *ParMETIS* (optionally optimize load / domain partitioning between *MPI* tasks)
+* Your choice of **Compiler** and **MPI**,
+* **HDF5** library (optionally optimize large I/O and file processing),
+* **GSL (GNU Scientific Library) , required for cosmological time integration**,
+* **FFTW**
+* **METIS** or **ParMETIS** (optionally optimize load / domain partitioning between **MPI** tasks)
 
 ### Compiling the benchmark
 
