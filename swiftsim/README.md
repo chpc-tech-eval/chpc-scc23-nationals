@@ -18,7 +18,7 @@ Configuration, building and installation instructions can be found in the `INSTA
 
 * Your choice of **Compiler** and **MPI**,
 * **HDF5** library (optionally optimize large I/O and file processing),
-* **GSL (GNU Scientific Library) , required for cosmological time integration**,
+* **GSL (GNU Scientific Library)** , required for cosmological time integration,
 * **FFTW**
 * **METIS** or **ParMETIS** (optionally optimize load / domain partitioning between **MPI** tasks)
 
