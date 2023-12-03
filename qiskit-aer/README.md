@@ -41,7 +41,7 @@ $ pip install .
 
 ### Build and Install Qiskit-Aer
 
-Within the same python virtual but under a different folder, follow the same instructions as you did for building and installing `Qikit`.
+Within the same python virtual environment but under a different folder, follow the same instructions as you did for building and installing `Qikit`.
 
 ```bash
 $ git clone https://github.com/Qiskit/qiskit-aer
@@ -53,7 +53,7 @@ Depending on your system, you may need to additionally add `PyBind11`, this can 
 
 *Quantum Volume (QV)** is a single-number metric that can be measured using a concrete protocol on near-term quantum computers of modest size. The QV method quantifies the largest random circuit of equal width and depth that the computer successfully implements. Quantum computing systems with high-fidelity operations, high connectivity, large calibrated gate sets, and circuit rewriting toolchains are expected to have higher quantum volumes. Simply put, Quantum Volume is a single number meant to encapsulate the performance of today’s quantum computers, like a classical computer’s transistor count.
 
-For this benchmark, you'll be writing your own Python code, to conduct the (Quantum Volume Experiment)(https://qiskit.org/ecosystem/experiments/dev/manuals/verification/quantum_volume.html). Save the following in a Python script `qv_experiment.py`:
+For this benchmark, we will be providing you with the details of the script that you will need to write in order to successfully conduct the (Quantum Volume Experiment)(https://qiskit.org/ecosystem/experiments/dev/manuals/verification/quantum_volume.html). Save the following in a Python script `qv_experiment.py`:
 
 ```python
 from qiskit import *
@@ -111,7 +111,7 @@ $ python qv_experiment.py
 
 ## Submission
 
-Repeat the experiment with `20` and then `30` qubits. Submit you build script, you compilation output,
+Repeat the experiment with `20` and then `30` qubits. Submit your build script, compilation output files, python script, build script and save the output of your run. *( Ensure that the print statement is uncommented)*
 
 # Graph: Number of Qubits vs Simulation time to Solution *[2%]*
 
