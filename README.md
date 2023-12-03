@@ -41,9 +41,9 @@ Good Luck!
 
 # Instructions for Mentors
 
-The role of Mentors and Volunteers is to provide leadership and guidance for the student competitors participating in this year's Center for Higher Performance Computing 2023 Student Cluster Competition.
+The role of Mentors and Volunteers is to provide leadership and guidance for the student competitors participating in this year's Center for High Performance Computing 2023 Student Cluster Competition.
 
-In preparing your teams for the competition, you main goal is to ensure that you teach and impart knowledge to the student participants in such a way that they are empowered and enable to tackle the problems and benchmarking tasks themselves.
+In preparing your teams for the competition, your main goal is to ensure that you teach and impart knowledge to the student participants in such a way that they are empowered and enable to tackle the problems and benchmarking tasks themselves.
 
 ## Hands-Off Rule *(You may not touch the keyboard)*
 
