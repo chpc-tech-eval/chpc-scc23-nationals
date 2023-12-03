@@ -1,7 +1,7 @@
 OpenFOAM
 ===========
 
-Open FOAM is an Open-Source Computational Fluid Dynamics (CFD) is a C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems. The code is typically memory bandwidth limited, such that memory channels are more useful than sheer core count.
+OpenFOAM is an open-source Computational Fluid Dynamics (CFD) C++ toolbox for the development of customized numerical solvers, and pre-/post-processing utilities for the solution of continuum mechanics problems. The code is typically memory bandwidth limited, such that memory channels are more useful than sheer core count.
 
 The Linear Algebra core libraries are the main communication bottlenecks for the scalability of the linear solvers, where memory bandwidth is the predominant limiting factor.
 
@@ -162,7 +162,7 @@ $ mpirun <MPI PARAMETERS> simpleFoam -paralel | tee submission.out
 
 ## Submission
 
-You are required to submit your, your compilation log files, SLURM batch output file *(if you used a scheduler)*, your image rendering of the **"Simple Small"** benchmark and your simulation output files of your most *efficient* run, for judging.
+You are required to submit your, compilation log files, SLURM batch output file *(if you used a scheduler)*, your image rendering of the **"Simple Small"** benchmark and your simulation output files of your most *efficient* run, for judging.
 
 
 
