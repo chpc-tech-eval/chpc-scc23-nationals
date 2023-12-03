@@ -72,7 +72,7 @@ You Will be using the **medium** benchmark, `36x36x36x72.chklat` for the competi
 
 ## Obtaining the Benchmark Files
 
-The benchmark files can be obtained from the NERSC repository. Note that this file repository included very outdated versions of the MILC source code and run scripts, so you must ignore these and make use of the source code and run scripts previously obtained from development branch of the [GitHub repo](git clone https://github.com/milc-qcd/milc_qcd.git). 
+The benchmark files can be obtained from the NERSC repository. Note that this file repository included very outdated versions of the MILC source code and run scripts, so you must ignore these and make use of the source code and run scripts previously obtained from development branch of the [GitHub repo](git clone https://github.com/milc-qcd/milc_qcd.git).
 
 From the NERSC repo you'll be making use of the *medium benchmark lattice files* as follows:
 
