@@ -9,7 +9,7 @@ Obtain copies of WRF and its Pre-Processing System source codes from GitHub [WRF
 
 ## Installation Instructions
 
-Configuration, building and installation instructions can be found at [Online Tutorial](https://www2.mmm.ucar.edu/wrf/OnLineTutorial/**, which detail the following dependencies to be installed or made available in your environment.
+Configuration, building and installation instructions can be found at **[Online Tutorial](https://www2.mmm.ucar.edu/wrf/OnLineTutorial/**, which detail the following dependencies to be installed or made available in your environment.
 
 ### System Requirements
 
