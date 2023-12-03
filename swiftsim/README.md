@@ -66,11 +66,34 @@ Copy your output files to your flash drive, and hand it to the organizers for ju
 * `run_swift.sh` submission generation script, and
 * `isolatedgalaxy.log` error and output logfile.
 
-# Benchmark 1: Visualization *[2%]*
+## Benchmark 1: Visualization *[2%]*
+
+You are required to generate a visualization of the galaxy simulated above using the **SPHviewer** tool.
+
+### Requirements and dependencies
+
+Use `pip` or `conda` to install the necessary dependencies into a clean Python Virtual Environment:
+
+```bash
+$ python3 -m venv SPHViewer
+$ source SPHViewer/bin/activate
+```
+
+### Install Visualization Software
+
+Follow the instructions here to deploy the latest stable version of the visualization software from [SPHViewer Git Repo](https://github.com/alejandrobll/py-sphviewer.git)
+
+```bash
+$ pip install py-sphviewer --user
+```
+
+Follow the instructions [Py-SPH Viewer Docs](https://alejandrobll.github.io/py-sphviewer/) to produce an image for submission from your `hdf5` files.
 
 # Benchmark 2: Eagle 25 (Parallel Efficiency Investigation) *[4%]*
 
-The second benchmark contains approximately 53 million dark matter, 50 million gas and 2 million start particles. The threading model used by **SWIFT** is not **OpenMP**. Parallel computing can be carried out in two ways. One is done on a single computer with multiple internal processors, known as a Shared Memory Multiprocessor. The other way is achieved through a series of computers interconnected by a network, known as a Distributed Memory Multicomputer. **SWIFT** uses **MPI** and **POSIX** threads (**pThreads**) to implement a hybrid parallelism scheme. This allows message passing between **NUMA** domains, with each domain containing multiple worker threads and utilizing shared memory.
+The second benchmark contains approximately 53 million dark matter, 50 million gas and 2 million start particles. The threading model used by **SWIFT** is not **OpenMP**. Parallel computing can be carried out in two ways. One is done on a single computer with multiple internal processors, known as a Shared Memory Multiprocessor.
+
+The other way is achieved through a series of computers interconnected by a network, known as a Distributed Memory Multicomputer. **SWIFT** uses **MPI** and **POSIX** threads (**pThreads**) to implement a hybrid parallelism scheme. This allows message passing between **NUMA** domains, with each domain containing multiple worker threads and utilizing shared memory.
 
 ## Scaling MPI Ranks per Node against POSIX pThreads
 
