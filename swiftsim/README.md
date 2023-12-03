@@ -1,7 +1,7 @@
 SwiftSIM
 =========
 
-**SWIFT** is an acronym for **S**mooth **P***article **H***ydrodynamics With **F**ine-grained **I***nter-dependent **T**asking. It is a gravity and **SPH** solver designed to run cosmological simulations, scaling well across up to peta-scale machines.
+**SWIFT** is an acronym for **S**mooth **P***article **H***ydrodynamics With **F**ine-grained **I**nter-dependent **T**asking. It is a gravity and **SPH** solver designed to run cosmological simulations, scaling well across up to peta-scale machines.
 
 ## Obtaining the source code
 
@@ -42,11 +42,11 @@ swift swift_mpi
 
 # Benchmark 1: Isolated Galaxy (Single Proc Run) *[4%]*
 
-This is a relatively small benchmark of an isolated galaxy disk embedded in an external Hernquist dark matter halo. The disk galaxy simulation comprises approximately 160 thousand start particles and is used for testing galaxy formation of the subgrid model implementation.
+This is a relatively small benchmark of an isolated galaxy disk embedded in an external Hernquist dark matter halo. The disk galaxy simulation comprises approximately of 160 thousand start particles and is used for testing galaxy formation of the subgrid model implementation.
 
 ## Running the benchmark
 
-Run the *IsolatedGalaxy_potential*, with the following options, pertaining to the physics aspects of the simulation. You may not edit the `isolated_galaxy.yml` file.
+Run the *IsolatedGalaxy_potential*, with the following options, pertaining to the physics aspects of the simulation. You may **not** edit the `isolated_galaxy.yml` file.
 
 ```bash
 $ cd examples/IsolatedGalaxy/IsolatedGalaxy_potential
