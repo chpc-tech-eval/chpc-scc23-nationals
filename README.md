@@ -32,7 +32,7 @@ Good Luck!
 | ---           |    --- | ---                                                                                                                                        |
 | HPCC & HPCG   |    20% | <ul><li>HPCC *[7.5%]*<ul><li>High Performance Linpack (HPL) *[5%]*</li></ul><li>HPCG *[7.5%]*</li></ul>                                    |
 | OpenFOAM      |    10% | <ul><li>Parallel Efficiency Investigation *[4%]*<ul><li>ParaView Visualization *[2%]*</li></ul><li>Simple Benchmark Large *[4%]*</li></ul> |
-| AmberMD       |    10% | *(Benchmark details to be given out on Tuesday)*                                                               |
+| AmberMD       |    10% | <ul><li>Explicit Solvent: JAC_Production_NPT_4fs & JAC_Production_NVE_4fs *[4%]*<li>Implicit Solvent: Myoglobin *[3%]*<li>Implicit Solvent: Nucleosome *[3%]*</li></ul> |
 | WRF           |    10% | <ul><li>Single Domain Case *[4%]*<ul><li> NCL Visualization *[2%]*</li></ul><li>Nested Two-Domain Case *[4%]*</li></ul>                    |
 | SwiftSIM      |    10% | <ul><li>Isolated Galaxy Potential *[4%]*<ul><li> PySPHViewer *[2%]*</li></ul><li>Eagle 25 *[4%]*</li></ul>                                 |
 | MILC          |    10% | NERSC MILC Medium *[10%]*                                                                                                                  |
