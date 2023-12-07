@@ -42,7 +42,7 @@ For guidance, use online resources, such as [HPL Calculator](https://www.advance
 
 To easily interpret the benchmark results, you can use the script provided `format.pl`:
 ```bash
-$ ./format.pl -w -f hpccoutf.txt
+$ perl format.pl -w -f hpccoutf.txt
 ```
 
 For each of your respective build(s) and run(s), you must submit your:
