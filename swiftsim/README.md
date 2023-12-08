@@ -100,7 +100,7 @@ The other way is achieved through a series of computers interconnected by a netw
 You will need to explicitly tell **SWIFT** how many **threads N** to spawn per **MPI Rank** and conduct an experiment to determine the most efficient communication pattern. You will do so by populating a table similar to the one shown below:
 
 | Total MPI Ranks | Ranks per node | Threads/Rank | RAM usage per node | Run time |
-| ...             | ...            | ...          | ...                | ...      |
+| ---             | ---            | ---          | ---                | ---      |
 | 6               | 2              | 8            |                    |          |
 | 12              | 4              | 4            |                    |          |
 | 24              | 8              | 2            |                    |          |
@@ -135,7 +135,7 @@ mpirun -np <Num Nodes><MPI Ranks> ../../swift_mpi \
 
 ### ***NOTE***
 
-NOTE: The simulation will run for approximately `<Time Steps> ~ 5000`. For your investigation, you may use fewer time steps, to determine the optimal communication pattern. This must however be consistent across your observations. For your final run, you may omit the `-n switch`.
+The simulation will run for approximately `<Time Steps> ~ 5000`. For your investigation, you may use fewer time steps, to determine the optimal communication pattern. This must however be consistent across your observations. For your final run, you may omit the `-n switch`.
 
 Each **SWFT** run will produce a `timestamps_<MPI Ranks><Threads per Rank>.txt` file. The wall clock time of interest in seconds, can be obtained by:
 
@@ -148,4 +148,6 @@ $ awk `BEGIN{tot=0} {tot += $11} END {print tot/1000}` \
 
 You are required to submit your (1) all binary and output files for your **SMP** runs, as well as your (2) table and (3) SLURM batch and (4) output files of your most efficient run, for judging.
 
-### ***Hint*** You can try to improve your computational throughput by disabling snapshot dumps and recompiling your binary executable files. Edit `src/engine.c` and `examples/main.c` to comment out calls to the function `engine_dump_snapshot()`.
+### ***Hint***
+
+You can try to improve your computational throughput by disabling snapshot dumps and recompiling your binary executable files. Edit `src/engine.c` and `examples/main.c` to comment out calls to the function `engine_dump_snapshot()`.
